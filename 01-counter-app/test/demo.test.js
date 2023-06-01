@@ -1,6 +1,12 @@
 
-test('Esta prueba no debe de falar', ()=>{
-    if ( 0 === 1 ) {
-        throw new Error('No puede dividir entre cero')
-    }
-})
+describe('Pruebas en <DemoComponent />', () => { 
+
+    test('Esta prueba no debe de falar', ()=>{
+    
+        const message1 = 'Hola mundo';
+    
+        const message2 = message1.trim();
+    
+        expect( message1 ).toBe( message2 );
+    })
+});
