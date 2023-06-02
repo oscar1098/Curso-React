@@ -22,7 +22,7 @@ describe('Prueba en 05-funciones', () => {
             username: nombre
         };
 
-        const usuarioActivo = getUsuarioActivo(nombre);
+        const usuarioActivo = getUsuarioActivo(nombre,edad);
 
         expect( testUsuarioActivo ).toEqual( usuarioActivo )
      });

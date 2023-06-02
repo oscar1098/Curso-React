@@ -1,9 +1,6 @@
 
-const usContext = ({ clave, nombre, edad, rango = 'Capitán' }) => {
+export const usContext = ({ clave, nombre, edad, rango = 'Capitán' }) => {
 
-
-    // console.log( nombre, edad, rango );
-    
     return {
         nombreClave: clave,
         anios: edad,
@@ -12,5 +9,4 @@ const usContext = ({ clave, nombre, edad, rango = 'Capitán' }) => {
             lng: -12.3232
         }
     }
-
 }
