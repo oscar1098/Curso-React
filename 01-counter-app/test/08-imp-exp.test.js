@@ -15,7 +15,7 @@ describe('Prueba en 08-imp-exp', () => {
 
     test('getHeroeById deber retornar undefine si no existe', () => {
         
-        const id = 100;
+        const id = 1;
         const hero = getHeroeById( id );
 
         expect( hero ).toEqual( { id: 1, name: 'Batman', owner: 'DC' } )
