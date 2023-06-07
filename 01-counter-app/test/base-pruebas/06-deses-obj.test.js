@@ -1,4 +1,4 @@
-import { usContext } from "../src/base-pruebas/06-deses-obj"
+import { usContext } from "../../src/base-pruebas/06-deses-obj"
 
 describe('Prueba 06 desestructuracion arreglos' , () => {
     test('usContext debe retornar un objeto',() => {
