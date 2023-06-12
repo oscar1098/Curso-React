@@ -6,7 +6,7 @@ exports[`Prueba en CounterApp Debe hacer match con el snapchot 1`] = `
     CounterApp
   </h1>
   <h2>
-    100
+    10
   </h2>
   <button>
     +1
@@ -14,8 +14,10 @@ exports[`Prueba en CounterApp Debe hacer match con el snapchot 1`] = `
   <button>
     -1
   </button>
-  <button>
-    restet
+  <button
+    aria-label="btn-reset"
+  >
+    Reset
   </button>
 </div>
 `;
