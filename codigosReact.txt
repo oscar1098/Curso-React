@@ -1,0 +1,71 @@
+-----------------------------------------------------------------------------------
+REACT
+
+// Crear un proyecto
+npm create vite
+
+// Instalar modulos de node
+npm install
+
+//Correr proyecto 
+npm run dev
+
+//Desplegar el proyecto
+
+npm run build 
+
+-----------------------------------------------------------------------------------
+POSTMAN
+// Concatenar
+con &
+
+-----------------------------------------------------------------------------------
+//PRUEBA REACT
+
+1. Instalaciones:
+
+npm install --save-dev jest
+npm install --save-dev babel-jest @babel/core @babel/preset-env @babel/preset-react
+npm install --save-dev @testing-library/react @types/jest jest-environment-jsdom
+
+2.1 Opcional: Si usamos Fetch API en el proyecto:
+
+npm i --save-dev whatwg-fetch (para node >18)
+
+3. Actualizar los scripts del package.json
+
+"scripts: {
+  ...
+  "test": "jest --watchAll"
+
+4.Crear la configuración de babel babel.config.cjs
+module.exports = {
+    presets: [
+        [ '@babel/preset-env', { targets: { esmodules: true } } ],
+        [ '@babel/preset-react', { runtime: 'automatic' } ],
+    ],
+};
+
+5. 1. Opcional, pero eventualmente necesario, crear Jest config y setup:
+    jest.config.cjs 
+
+module.exports = {
+    testEnvironment: 'jest-environment-jsdom',
+    setupFiles: ['./jest.setup.js']
+}
+
+jest.setup.js
+
+import "whatwg-fetch";
+
+6.Opcional, para instalar los propTypes
+
+npm install prop-types --save
+
+7. abrir el test en consola
+
+npm run test
+
+
+
+
